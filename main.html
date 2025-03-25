@@ -15,7 +15,7 @@
                 <div>
                     
                     <h1 class="text-3xl font-bold">
-                        $4500
+                        $ <span id="main-balance">4500</span>
                     </h1>
                     <p class="border rounded p-1">availble balance</p>
                 </div>
@@ -70,10 +70,12 @@
                             <fieldset class="fieldset">
                               <label class="fieldset-label">Account Number</label>
                               <input value="01000000000" id="Account-number" type="number" maxlength="11" class="input" placeholder="Your Account Number" required/>
+                              <label class="fieldset-label">Amount</label>
+                              <input  id="amount" type="number" maxlength="11" class="input" placeholder="Amount Number" required/>
                               <label class="fieldset-label">PIN</label>
                               <input value="1234" id="Pin" type="number" class="input" placeholder="Enter Your PIN" required />
                               <div><a class="link link-hover">Forgot PIN?</a></div>
-                              <button id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">Add Money</button>
+                              <button id="add-money" class="btn btn-neutral mt-4 bg-blue-700 border-none">Add Money</button>
                             </fieldset>
                           </form>
                     </div>
@@ -83,5 +85,7 @@
         </section>
     </section>
 
+
+    <script src="script/addMoney.js"></script>
 </body>
 </html>
