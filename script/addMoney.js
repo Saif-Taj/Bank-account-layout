@@ -7,10 +7,12 @@ document.getElementById('add-money').addEventListener('click', function (event) 
     const mainBalance = document.getElementById('main-balance').innerText;
     const convertedMainBalance = parseFloat(mainBalance)
     
+    
 
     if (convertedPin === 1234){
         const sum = convertedMainBalance + convertedAmount;
         document.getElementById('main-balance').innerText = sum;
+        
     }
     else{
         console.log('Enter Your Correct Pin');
