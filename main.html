@@ -26,12 +26,12 @@
             <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
             <p class="text-gray-400'">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
             <div class="cards grid grid-cols-3 gap-2 p-2 mt-14 ">
-                <div class="box border p-4 text-center rounded-sm
+                <div  id="money-in" class="box border p-4 text-center rounded-sm
                 cursor-pointer">
                     <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                     <h3>Add Money</h3>
                 </div>
-                <div class="box border p-4 text-center rounded-sm cursor-pointer">
+                <div id="money-out" class="box border p-4 text-center rounded-sm cursor-pointer">
                     <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                     <h3>Cash Out</h3>
                 </div>
@@ -52,8 +52,8 @@
                     <h3>Transactions</h3>
                 </div>
         </section>
-        <section>
-            <h2>Add Money</h2>
+        <section id="money-add">
+            <h2 class=" text-center text-2xl font-bold text-red-800">Add Money</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                   
@@ -83,9 +83,37 @@
                 </div>
               </div>
         </section>
+
+        <section id="cash-out">
+            <h2 class=" text-center text-2xl font-bold text-green-800">Cash Out</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  
+                  <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        
+                          <form class="card-body">
+                            <fieldset class="fieldset">
+                              <label class="fieldset-label">Agent Account Number</label>
+                              <input value="01000000000" id="Account-number" type="number" maxlength="11" class="input" placeholder="Agent Account Number" required/>
+                              <label class="fieldset-label"> Amount</label>
+                              <input  id="cash-out-amount" type="number" maxlength="11" class="input" placeholder="Amount Number" required/>
+                              <label class="fieldset-label">PIN</label>
+                              <input value="1234" id="cash-out-pin" type="number" class="input" placeholder="Enter Your PIN" required />
+                              <div><a class="link link-hover">Forgot PIN?</a></div>
+                              <button id="cashOut-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">Cash Out</button>
+                            </fieldset>
+                          </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </section>
 
 
     <script src="script/addMoney.js"></script>
+    <script src="script/toggle.js"></script>
+    <script src="script/cashOut.js"></script>
 </body>
 </html>
